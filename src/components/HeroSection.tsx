@@ -1,18 +1,26 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Shield, Truck, Clock } from 'lucide-react';
+import heroWarehouse from '@/assets/hero-warehouse.jpg';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section id="hero" className="relative min-h-[90vh] hero-gradient overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+    <section id="hero" className="relative min-h-[90vh] overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroWarehouse} 
+          alt="Modern ilaç deposu" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 hero-gradient opacity-85" />
+      </div>
+
+      {/* Floating blur effects */}
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-foreground rounded-full blur-3xl" />
       </div>
-
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzBtLTEgMGExIDEgMCAxIDAgMiAwYTEgMSAwIDEgMCAtMiAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMSkiLz48L2c+PC9zdmc+')] opacity-30" />
 
       <div className="container-custom relative z-10 pt-16 pb-24 lg:pt-24 lg:pb-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
