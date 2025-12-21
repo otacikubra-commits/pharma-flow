@@ -64,7 +64,7 @@ export const Header: React.FC = () => {
               </svg>
             </div>
             <div>
-              <span className="text-xl font-bold text-foreground">MediFarma</span>
+              <span className="text-xl font-bold text-foreground">Hesecza</span>
               <span className="block text-xs text-muted-foreground">Ecza Deposu</span>
             </div>
           </a>

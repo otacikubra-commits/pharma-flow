@@ -56,7 +56,7 @@ export const AboutSection: React.FC = () => {
               </h2>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                MediFarma Ecza Deposu olarak 1993 yılından bu yana Türkiye genelinde 
+                Hesecza Ecza Deposu olarak 1993 yılından bu yana Türkiye genelinde 
                 eczanelere ve sağlık kuruluşlarına kesintisiz hizmet veriyoruz. 
                 Modern depo sistemlerimiz, geniş ürün yelpazemiz ve uzman kadromuzla 
                 sektörün lider firmalarından biri olmaktan gurur duyuyoruz.
