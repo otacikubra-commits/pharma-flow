@@ -1,0 +1,133 @@
+import React, { useState, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { Menu, X, Phone, Mail } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+export const Header: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navLinks = [
+    { label: 'Ana Sayfa', href: '#hero' },
+    { label: 'Hakkımızda', href: '#about' },
+    { label: 'Hizmetlerimiz', href: '#services' },
+    { label: 'Ürünler', href: '#products' },
+    { label: 'İletişim', href: '#contact' },
+  ];
+
+  return (
+    <>
+      {/* Top bar */}
+      <div className="hidden md:block bg-primary text-primary-foreground py-2">
+        <div className="container-custom flex justify-between items-center text-sm">
+          <div className="flex items-center gap-6">
+            <a href="tel:+902121234567" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <Phone className="w-4 h-4" />
+              +90 212 123 45 67
+            </a>
+            <a href="mailto:info@eczadeposu.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <Mail className="w-4 h-4" />
+              info@eczadeposu.com
+            </a>
+          </div>
+          <div className="text-primary-foreground/80">
+            Türkiye'nin Güvenilir İlaç Tedarikçisi
+          </div>
+        </div>
+      </div>
+
+      {/* Main header */}
+      <header
+        className={cn(
+          'sticky top-0 z-50 transition-all duration-300',
+          isScrolled
+            ? 'bg-card/95 backdrop-blur-lg shadow-lg py-3'
+            : 'bg-transparent py-4'
+        )}
+      >
+        <div className="container-custom flex items-center justify-between">
+          {/* Logo */}
+          <a href="#hero" className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
+              <svg className="w-8 h-8 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <div>
+              <span className="text-xl font-bold text-foreground">MediFarma</span>
+              <span className="block text-xs text-muted-foreground">Ecza Deposu</span>
+            </div>
+          </a>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-foreground/80 hover:text-primary font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* CTA Buttons */}
+          <div className="hidden lg:flex items-center gap-4">
+            <Button variant="outline" size="sm">
+              Giriş Yap
+            </Button>
+            <Button size="sm">
+              Sipariş Ver
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden p-2 text-foreground"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-card shadow-xl border-t border-border">
+            <nav className="container-custom py-6 flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-foreground/80 hover:text-primary font-medium py-2 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <div className="flex flex-col gap-3 pt-4 border-t border-border">
+                <Button variant="outline" className="w-full">
+                  Giriş Yap
+                </Button>
+                <Button className="w-full">
+                  Sipariş Ver
+                </Button>
+              </div>
+            </nav>
+          </div>
+        )}
+      </header>
+    </>
+  );
+};
