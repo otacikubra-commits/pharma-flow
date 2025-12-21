@@ -7,7 +7,7 @@ export const ContactSection: React.FC = () => {
   const contactInfo = [
     { icon: MapPin, label: 'Adres', value: 'Organize Sanayi Bölgesi, 1. Cadde No:45, İstanbul' },
     { icon: Phone, label: 'Telefon', value: '+90 212 123 45 67' },
-    { icon: Mail, label: 'E-posta', value: 'info@medifarma.com.tr' },
+    { icon: Mail, label: 'E-posta', value: 'info@hesecza.com.tr' },
     { icon: Clock, label: 'Çalışma Saatleri', value: 'Pzt-Cmt: 08:00 - 18:00' },
   ];
 

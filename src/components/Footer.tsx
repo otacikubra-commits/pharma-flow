@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
                 </svg>
               </div>
               <div>
-                <span className="text-xl font-bold">MediFarma</span>
+                <span className="text-xl font-bold">Hesecza</span>
                 <span className="block text-xs text-primary-foreground/70">Ecza Deposu</span>
               </div>
             </a>
@@ -118,7 +118,7 @@ export const Footer: React.FC = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 MediFarma Ecza Deposu. Tüm hakları saklıdır.
+            © 2024 Hesecza Ecza Deposu. Tüm hakları saklıdır.
           </p>
           <button
             onClick={scrollToTop}
