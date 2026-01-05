@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import logo from '@/assets/logo.png';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,18 +56,8 @@ export const Header: React.FC = () => {
       >
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
-          <a href="#hero" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-              <svg className="w-8 h-8 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-            </div>
-            <div>
-              <span className="text-xl font-bold text-foreground">Hesecza</span>
-              <span className="block text-xs text-muted-foreground">Ecza Deposu</span>
-            </div>
+          <a href="#hero" className="flex items-center">
+            <img src={logo} alt="Hesecza Ecza Deposu" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

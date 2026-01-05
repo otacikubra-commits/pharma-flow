@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Twitter, ArrowUp } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -41,18 +42,8 @@ export const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#hero" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-                <svg className="w-8 h-8 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <div>
-                <span className="text-xl font-bold">Hesecza</span>
-                <span className="block text-xs text-primary-foreground/70">Ecza Deposu</span>
-              </div>
+            <a href="#hero" className="mb-6 inline-block">
+              <img src={logo} alt="Hesecza Ecza Deposu" className="h-12 w-auto brightness-0 invert" />
             </a>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
               2024'ten bu yana Türkiye'nin güvenilir ecza deposu. Kaliteli ürünler, hızlı teslimat, 
