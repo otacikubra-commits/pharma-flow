@@ -6,8 +6,8 @@ import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 export const ContactSection: React.FC = () => {
   const contactInfo = [
     { icon: MapPin, label: 'Adres', value: 'Organize Sanayi Bölgesi, 1. Cadde No:45, İstanbul' },
-    { icon: Phone, label: 'Telefon', value: '+90 212 123 45 67' },
-    { icon: Mail, label: 'E-posta', value: 'info@hesecza.com.tr' },
+    { icon: Phone, label: 'Telefon', value: '0 551 562 66 62' },
+    { icon: Mail, label: 'E-posta', value: 'info@hesecza.com' },
     { icon: Clock, label: 'Çalışma Saatleri', value: 'Pzt-Cmt: 08:00 - 18:00' },
   ];
 

@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
               </div>
             </a>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
-              1993'ten bu yana Türkiye'nin güvenilir ecza deposu. Kaliteli ürünler, hızlı teslimat, 
+              2024'ten bu yana Türkiye'nin güvenilir ecza deposu. Kaliteli ürünler, hızlı teslimat, 
               profesyonel hizmet anlayışıyla eczanelerinizin yanındayız.
             </p>
             <div className="flex gap-4">

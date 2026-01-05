@@ -73,15 +73,6 @@ export const ProductsSection: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <ScrollAnimationWrapper>
-          <div className="text-center">
-            <Button size="lg">
-              Tüm Ürünleri Görüntüle
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-          </div>
-        </ScrollAnimationWrapper>
       </div>
     </section>
   );

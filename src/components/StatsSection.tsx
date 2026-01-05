@@ -31,7 +31,7 @@ export const StatsSection: React.FC = () => {
 
   const stats = [
     { icon: Package, value: 5000, suffix: '+', label: 'Ürün Çeşidi' },
-    { icon: Users, value: 1500, suffix: '+', label: 'Aktif Eczane' },
+    { icon: Users, value: 150, suffix: '+', label: 'Aktif Eczane' },
     { icon: MapPin, value: 81, label: 'İl Kapsama' },
     { icon: Truck, value: 50000, suffix: '+', label: 'Aylık Teslimat' },
   ];

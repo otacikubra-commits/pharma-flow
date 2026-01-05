@@ -30,13 +30,17 @@ export const CTASection: React.FC = () => {
                 Kaliteli hizmet ve rekabetçi fiyatlarla yanınızdayız.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Button variant="hero" size="xl">
-                  Teklif Al
-                  <ArrowRight className="w-5 h-5" />
+                <Button variant="hero" size="xl" asChild>
+                  <a href="https://wa.me/905515626662" target="_blank" rel="noopener noreferrer">
+                    Teklif Al
+                    <ArrowRight className="w-5 h-5" />
+                  </a>
                 </Button>
-                <Button variant="heroOutline" size="xl">
-                  <Phone className="w-5 h-5" />
-                  0212 123 45 67
+                <Button variant="heroOutline" size="xl" asChild>
+                  <a href="tel:+905515626662">
+                    <Phone className="w-5 h-5" />
+                    0 551 562 66 62
+                  </a>
                 </Button>
               </div>
             </div>
