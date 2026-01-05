@@ -29,13 +29,13 @@ export const Header: React.FC = () => {
       <div className="hidden md:block bg-primary text-primary-foreground py-2">
         <div className="container-custom flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+902121234567" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+905515626662" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
-              +90 212 123 45 67
+              0 551 562 66 62
             </a>
-            <a href="mailto:info@eczadeposu.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:info@hesecza.com" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="w-4 h-4" />
-              info@eczadeposu.com
+              info@hesecza.com
             </a>
           </div>
           <div className="text-primary-foreground/80">
@@ -87,8 +87,8 @@ export const Header: React.FC = () => {
             <Button variant="outline" size="sm">
               Giriş Yap
             </Button>
-            <Button size="sm">
-              Sipariş Ver
+            <Button size="sm" asChild>
+              <a href="#contact">Sipariş Ver</a>
             </Button>
           </div>
 
@@ -120,8 +120,8 @@ export const Header: React.FC = () => {
                 <Button variant="outline" className="w-full">
                   Giriş Yap
                 </Button>
-                <Button className="w-full">
-                  Sipariş Ver
+                <Button className="w-full" asChild>
+                  <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Sipariş Ver</a>
                 </Button>
               </div>
             </nav>

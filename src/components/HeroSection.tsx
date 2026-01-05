@@ -37,8 +37,8 @@ export const HeroSection: React.FC = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
-              30 yılı aşkın tecrübemizle, eczanelere ve sağlık kuruluşlarına 
-              en kaliteli ilaç ve medikal ürünleri hızlı ve güvenli şekilde ulaştırıyoruz.
+              Eczanelere ve sağlık kuruluşlarına en kaliteli ilaç ve medikal ürünleri 
+              hızlı ve güvenli şekilde ulaştırıyoruz.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">
@@ -52,18 +52,14 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-accent">5000+</div>
                 <div className="text-sm text-primary-foreground/70">Ürün Çeşidi</div>
               </div>
-              <div className="text-center border-x border-primary-foreground/20">
-                <div className="text-3xl md:text-4xl font-bold text-accent">1500+</div>
+              <div className="text-center border-l border-primary-foreground/20">
+                <div className="text-3xl md:text-4xl font-bold text-accent">150+</div>
                 <div className="text-sm text-primary-foreground/70">Eczane</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-accent">30+</div>
-                <div className="text-sm text-primary-foreground/70">Yıl Tecrübe</div>
               </div>
             </div>
           </div>

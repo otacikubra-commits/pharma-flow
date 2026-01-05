@@ -26,18 +26,6 @@ export const AboutSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
               </div>
               
-              {/* Floating Card */}
-              <div className="absolute -bottom-8 -right-8 bg-card rounded-2xl p-6 shadow-xl border border-border">
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <Award className="w-8 h-8 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-foreground">30+</div>
-                    <div className="text-muted-foreground">Yıllık Tecrübe</div>
-                  </div>
-                </div>
-              </div>
 
               {/* Decorative */}
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-secondary rounded-2xl -z-10" />
@@ -56,7 +44,7 @@ export const AboutSection: React.FC = () => {
               </h2>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Hesecza Ecza Deposu olarak 1993 yılından bu yana Türkiye genelinde 
+                Hesecza Ecza Deposu olarak 2024 yılından bu yana Türkiye genelinde 
                 eczanelere ve sağlık kuruluşlarına kesintisiz hizmet veriyoruz. 
                 Modern depo sistemlerimiz, geniş ürün yelpazemiz ve uzman kadromuzla 
                 sektörün lider firmalarından biri olmaktan gurur duyuyoruz.
@@ -71,24 +59,6 @@ export const AboutSection: React.FC = () => {
                 ))}
               </div>
 
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 p-6 bg-secondary/50 rounded-2xl">
-                <div className="text-center">
-                  <Users className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-foreground">200+</div>
-                  <div className="text-sm text-muted-foreground">Çalışan</div>
-                </div>
-                <div className="text-center border-x border-border">
-                  <Building className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-foreground">15</div>
-                  <div className="text-sm text-muted-foreground">Şube</div>
-                </div>
-                <div className="text-center">
-                  <Award className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-foreground">50+</div>
-                  <div className="text-sm text-muted-foreground">Ödül</div>
-                </div>
-              </div>
             </div>
           </ScrollAnimationWrapper>
         </div>
