@@ -75,9 +75,6 @@ export const Header: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              Giriş Yap
-            </Button>
             <Button size="sm" asChild>
               <a href="#contact">Sipariş Ver</a>
             </Button>
@@ -108,9 +105,6 @@ export const Header: React.FC = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-border">
-                <Button variant="outline" className="w-full">
-                  Giriş Yap
-                </Button>
                 <Button className="w-full" asChild>
                   <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Sipariş Ver</a>
                 </Button>
