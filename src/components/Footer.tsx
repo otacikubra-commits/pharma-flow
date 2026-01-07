@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
       { label: 'Hakkımızda', href: '#about' },
       { label: 'Belgeler', href: '#belgeler' },
       { label: 'Kariyer', href: '#' },
-      { label: 'Sürdürülebilirlik', href: '#' },
+      { label: 'Hizmetlerimiz', href: '#services' },
     ],
     services: [
       { label: 'Reçeteli İlaçlar', href: '#services' },
@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
       { label: 'Medikal Cihazlar', href: '#services' },
     ],
     support: [
-      { label: 'SSS', href: '#' },
+      { label: 'İletişim', href: '#contact' },
       { label: 'Teslimat Bilgisi', href: '#' },
       { label: 'İade Politikası', href: '#' },
       { label: 'Gizlilik Politikası', href: '#' },
