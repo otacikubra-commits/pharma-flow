@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Twitter, ArrowUp } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/heslogo.png';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -10,8 +10,8 @@ export const Footer: React.FC = () => {
   const footerLinks = {
     company: [
       { label: 'Hakkımızda', href: '#about' },
+      { label: 'Belgeler', href: '#belgeler' },
       { label: 'Kariyer', href: '#' },
-      { label: 'Basın Odası', href: '#' },
       { label: 'Sürdürülebilirlik', href: '#' },
     ],
     services: [
